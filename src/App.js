@@ -4,23 +4,19 @@ import './App.css';
 import Greet from './components/greet'
 import Welcome from './components/welcome';
 import Hello from './components/Hello';
+import Message from './components/Message';
+import Counter from './components/Counter';
+import FunctionClick from './components/functionClick';
+import ClassClick from './components/ClassClick';
 
 class App extends Component {
     render() {
       return(
         <div className='App'>
-
-          <Greet name='Joy' heroName="batman">
-            <p>This is children props</p>
-          </Greet>
-          <Greet name='Mary' heroName="spider man">
-            <button>Action</button>
-          </Greet>
-          <Greet name='Ken' heroName="ant man"/>
-
-        <Welcome  name='Joy' heroName="batman"/>
-        <Welcome name='Mary' heroName="spider man"/>
-        <Welcome name='Ken' heroName="ant man"/>
+        <FunctionClick/>
+        <ClassClick/>
+          <Greet name="Jane" heroName={'batman'}></Greet>
+          <Welcome name={'Ben'} heroName = 'Omwami' ></Welcome>
         </div>
       )
     }
